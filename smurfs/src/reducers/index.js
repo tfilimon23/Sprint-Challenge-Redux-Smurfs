@@ -42,7 +42,7 @@ const reducer = (state = initialState, action) => {
       ...state,
       fetchingSmurfs: false,
       error: '',
-      friends: action.payload
+      smurfs: action.payload
       };
     }
     case FETCH_SMURF_FAILURE: {
@@ -64,7 +64,7 @@ const reducer = (state = initialState, action) => {
         ...state,
         addingSmurf: false,
         error: '',
-        friends: action.payload
+        smurfs: action.payload
       };
     }
     case ADD_SMURF_FAILURE: {
